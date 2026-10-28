@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "RepSense",
+    "slug": "repsense",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.repsense.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "RepSense needs Bluetooth access to connect to your RepSense Band for real-time workout tracking.",
+        "NSBluetoothPeripheralUsageDescription": "RepSense uses Bluetooth to communicate with the RepSense Band wearable device.",
+        "NSLocationWhenInUseUsageDescription": "RepSense uses location services for Bluetooth scanning on iOS.",
+        "UIBackgroundModes": ["bluetooth-central", "bluetooth-peripheral"]
+      }
+    },
+    "android": {
+      "package": "com.repsense.app",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.DETECT_SCREEN_CAPTURE"
+      ]
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}
